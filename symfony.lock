@@ -93,14 +93,38 @@
     "egulias/email-validator": {
         "version": "2.1.7"
     },
+    "eightpoints/guzzle-bundle": {
+        "version": "7.0",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "master",
+            "version": "7.0",
+            "ref": "e5e657ce5a4ebc99f3c76916938aa0a5f8ef7736"
+        },
+        "files": [
+            "config/packages/eight_points_guzzle.yaml"
+        ]
+    },
     "facebook/webdriver": {
         "version": "1.6.0"
     },
     "fig/link-util": {
         "version": "1.0.0"
     },
+    "guzzlehttp/guzzle": {
+        "version": "6.3.3"
+    },
+    "guzzlehttp/promises": {
+        "version": "v1.3.1"
+    },
+    "guzzlehttp/psr7": {
+        "version": "1.5.2"
+    },
     "jdorn/sql-formatter": {
         "version": "v1.2.17"
+    },
+    "metaer/curl-wrapper-bundle": {
+        "version": "1.0.3"
     },
     "monolog/monolog": {
         "version": "1.24.0"
@@ -110,6 +134,32 @@
     },
     "ocramius/proxy-manager": {
         "version": "2.1.1"
+    },
+    "overblog/graphiql-bundle": {
+        "version": "0.1",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "master",
+            "version": "0.1",
+            "ref": "fe8d172f2480efc598f5a8be0e732656d3594cec"
+        },
+        "files": [
+            "config/routes/dev/graphiql.yaml"
+        ]
+    },
+    "overblog/graphql-bundle": {
+        "version": "0.11",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "master",
+            "version": "0.11",
+            "ref": "80a27b90b4928728bc2afe3ff1198826e033285c"
+        },
+        "files": [
+            "config/graphql/types/.gitignore",
+            "config/packages/graphql.yaml",
+            "config/routes/graphql.yaml"
+        ]
     },
     "phpdocumentor/reflection-common": {
         "version": "1.0.1"
@@ -126,6 +176,9 @@
     "psr/container": {
         "version": "1.0.0"
     },
+    "psr/http-message": {
+        "version": "1.0.1"
+    },
     "psr/link": {
         "version": "1.0.0"
     },
@@ -134,6 +187,9 @@
     },
     "psr/simple-cache": {
         "version": "1.0.1"
+    },
+    "ralouphie/getallheaders": {
+        "version": "2.0.5"
     },
     "sensio/framework-extra-bundle": {
         "version": "5.2",
@@ -492,6 +548,9 @@
     },
     "webmozart/assert": {
         "version": "1.4.0"
+    },
+    "webonyx/graphql-php": {
+        "version": "v0.13.4"
     },
     "zendframework/zend-code": {
         "version": "3.3.1"

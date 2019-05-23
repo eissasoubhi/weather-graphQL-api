@@ -1,0 +1,9 @@
+Query:
+  type: "object"
+  config:
+    fields:
+      weather:
+        type: "Weather!"
+        args:
+          city: "String!"
+        resolve: "@=resolver('predict', [args['city']])"

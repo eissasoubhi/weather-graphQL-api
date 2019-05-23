@@ -5,6 +5,11 @@
 # https://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
 parameters:
     locale: 'en'
+    curl_wrapper:
+        clients:
+            weather:
+                baseurl: 'http://api.openweathermap.org/data/2.5'
+                APPID: 'eb0784cc1d2d5616246cae1527a530c0'
 
 services:
     # default configuration for services in *this* file
@@ -26,3 +31,4 @@ services:
 
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
+

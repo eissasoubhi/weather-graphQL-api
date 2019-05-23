@@ -1,0 +1,64 @@
+Weather:
+  type: "object"
+  config:
+    fields:
+      date_timestamp:
+        type: "Int!"
+        description: "Time of data forecasted, unix, UTC"
+      date_text:
+        type: "String!"
+        description: "Data/time of calculation, UTC"
+      condition:
+        type: "String!"
+      description:
+        type: "String"
+      cloudiness:
+        type: "Int"
+        description: "Cloudiness in %"
+      atmosphere:
+        type: "Atmosphere"
+      wind:
+        type: "Wind"
+
+Atmosphere:
+  type: "object"
+  config:
+    fields:
+      temperature:
+        type: "Float!"
+        description: "Temperature. in Kelvin"
+      pressure:
+        type: "Float!"
+        description: "Atmospheric pressure on the sea level by default, in hPa"
+      sea_level:
+        type: "Float!"
+        description: "Atmospheric pressure on the sea level, in hPa"
+      grnd_level:
+        type: "Float!"
+        description: "Atmospheric pressure on the ground level, in hPa"
+      humidity:
+        type: "Float!"
+        description: "Humidity, in %"
+
+TempUnit:
+  type: enum
+  config:
+    description: "Temperature unit"
+    values:
+      Celsius:
+        value: "C"
+      Fahrenheit:
+        value: "F"
+      kelvin:
+        value: "K"
+
+Wind:
+  type: "object"
+  config:
+    fields:
+      speed:
+        type: "Float!"
+        description: "Wind speed, in meter/sec"
+      degree:
+        type: "Float!"
+        description: "Wind direction, degrees (meteorological)"
