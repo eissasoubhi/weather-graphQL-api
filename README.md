@@ -86,6 +86,6 @@ And this is the result:
 }
 ```
 
-To see the results in action, you can use [Postman](https://www.getpostman.com/)! like in the image below
+To see the results in action, you can use [Postman](https://www.getpostman.com/)! like in the image below or you can test it on local with the playground page http://localhost:8000/graphiql
 
 ![Demo](/demo.png)
